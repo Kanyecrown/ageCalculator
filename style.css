@@ -1,0 +1,124 @@
+:root {
+ --Purple: hsl(259, 100%, 65%);
+ --Light-red: hsl(0, 100%, 67%);
+ --White: hsl(0, 0%, 100%);
+ --Off-white: hsl(0, 0%, 94%);
+ --Light-grey: hsl(0, 0%, 86%);
+ --Smokey-grey: hsl(0, 1%, 44%);
+ --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+ font-family: Arial, Helvetica, sans-serif;
+ box-sizing: border-box;
+}
+
+body {
+ font-size: 15pt;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ min-height: 100vh;
+ align-items: center;
+ justify-content: center;
+ background: var(--Light-grey);
+
+}
+
+.card{
+ max-width: 100%;
+ min-width: 300px;
+ width: 84%;
+ background: var(--White);
+ padding: 20px;
+ border-radius: 9px; 
+ border-bottom-right-radius: 100px;
+}
+.container-flex{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.input-container{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-bottom: 3.1rem;
+ /*border-bottom: 1px solid #979797*/
+}
+
+.input-container label{
+ font-size: 0.8rem;
+ font-weight: 700;
+ color: var(--Smokey-grey);
+ margin-bottom: 5px;
+}
+
+.input-container input{
+ width: 70px;
+ height: 40px;
+ border: none;
+ outline: none;
+ background: transparent;
+ border: 1px solid var(--Light-grey);
+ text-align: center;
+ font-weight: 800;
+ color: #000;
+ font-size: 18px;
+ transition: .1s ease;
+}
+.input-container input:focus{
+ border: 2px solid var(--Purple);
+}
+
+.input-container small{
+ color: var(--Light-red);
+ font-size: 0.7rem;
+ font-weight: 600;
+ text-align: left;
+ margin-top: 4px;
+}
+
+
+.submit-block{
+ position: relative;
+  margin-bottom: 5rem;
+
+}
+
+.submit-block .submit-btn{
+ position: absolute;
+ border: none;
+ outline: none;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: var(--Purple);
+ left: 40%;
+ right: 50%;
+ top: -28px;
+ transition:all 0.5s ease;
+ box-shadow: 0 10px 15px 0 rgba(0,0,0,0.12),0 5px 7px 0 rgba(0,0,0,0.15);
+}
+
+
+.submit-btn:hover{
+ background: #000;
+ transform: scale(0.95);
+}
+.submit-btn img{
+ width: 100%;
+}
+
+.output{
+ font-size: 1.5rem;
+}
+
+.output span{
+ color: var(--Purple);
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 600;
+}
+
