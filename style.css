@@ -75,10 +75,11 @@ body {
 
 .input-container small{
  color: var(--Light-red);
- font-size: 0.4rem;
+ font-size: 0.5rem;
  font-weight: 600;
- text-align: center;
+ text-align: left;
  margin-top: 4px;
+ text-align:center;
 }
 
 
